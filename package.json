@@ -1,0 +1,41 @@
+{
+  "name": "vuex-micro-frontends",
+  "description": "微前端 vuex 父子通信解决方案. vue micro frontends communication solution.",
+  "version": "0.0.1",
+  "license": "MIT",
+  "author": "dream2023 <1098626505@qq.com>",
+  "keywords": [
+    "vue",
+    "vuex",
+    "plugin",
+    "micro frontends",
+    "vue micro frontends"
+  ],
+  "repository": "dream2023/vuex-micro-frontends",
+  "scripts": {
+    "build": "father-build",
+    "test": "jest --env=jsdom",
+    "prepublish": "yarn build"
+  },
+  "source": "src/index.ts",
+  "main": "./dist/vuex-micro-frontends.js",
+  "module": "./dist/vuex-micro-frontends.mjs",
+  "unpkg": "./dist/vuex-micro-frontends.umd.min.js",
+  "type": "./dist/index.d.ts",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "dependencies": {
+    "@ice/stark-data": "^0.1.2"
+  },
+  "devDependencies": {
+    "@types/jest": "^25.1.4",
+    "father-build": "^1.17.2",
+    "jest": "^25.2.4",
+    "ts-jest": "^25.3.0",
+    "typescript": "^3.8.3",
+    "vue": "^2.6.11",
+    "vuex": "^3.1.3"
+  }
+}
