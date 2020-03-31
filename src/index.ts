@@ -46,3 +46,8 @@ export function receive(keys?: string[]): Plugin<AnyObj> {
     );
   };
 }
+
+export default {
+  send,
+  receive
+};

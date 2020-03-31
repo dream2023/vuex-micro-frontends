@@ -1,6 +1,21 @@
 # vuex-micro-frontends
 
+![NPM](https://img.shields.io/npm/l/vuex-micro-frontends)
+![npm](https://img.shields.io/npm/v/vuex-micro-frontends)
+![npm bundle size](https://img.shields.io/bundlephobia/min/vuex-micro-frontends)
+![David](https://img.shields.io/david/dev/dream2023/vuex-micro-frontends)
+![npm](https://img.shields.io/npm/dt/vuex-micro-frontends)
+
 微前端 vuex 父子通信解决方案. vue micro frontends communication solution.
+
+## 介绍
+
+我们知道微前端父子通信方式有很多, 例如 `location`、`Cookie`、`LocalStorage`、`window`, 但是他们都有一个通病, 即无法实时监测变化, 例如换肤或者多语言切换, 想要应用到子项目, 必须进行页面的刷新, 然后才能通知到, 而尽量少的改动原项目的原则, 很多`Vue`项目都是基于`vuex`进行全局数据的共享, 所以才诞生了`vuex-micro-frontends`
+
+## 特点
+
+- 父子传递、实时变化
+- 仅 1kb
 
 ## Installation
 
@@ -39,7 +54,3 @@ const store = new Vuex.Store({
   // plugins: [vuexMicroFrontends.receive(['name'])], // 仅接受 name 字段数据
 });
 ```
-
-## 其它
-
-对于框架应用和子应用，运行时都共享了当前页面的 `location`、`Cookie`、`LocalStorage`、`window` 等全局信息，因此应用间的通信，也可以通过这些方案很简单的实现。
