@@ -1,7 +1,7 @@
 {
   "name": "vuex-micro-frontends",
   "description": "微前端 vuex 父子通信解决方案. vue micro frontends communication solution.",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "license": "MIT",
   "author": "dream2023 <1098626505@qq.com>",
   "keywords": [
@@ -18,7 +18,7 @@
     "prepublish": "yarn build"
   },
   "source": "src/index.ts",
-  "main": "./dist/vuex-micro-frontends.js",
+  "main": "./dist/vuex-micro-frontends.umd.min.js",
   "module": "./dist/vuex-micro-frontends.mjs",
   "unpkg": "./dist/vuex-micro-frontends.umd.min.js",
   "type": "./dist/index.d.ts",
